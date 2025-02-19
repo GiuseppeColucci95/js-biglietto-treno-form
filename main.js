@@ -66,9 +66,6 @@ formEl.addEventListener('submit', function (e) {
   offerTicket.innerHTML = offer;
   priceTicket.innerHTML = totalPrice.toFixed(2) + "€";
 
-
   console.log("Final price: " + totalPrice.toFixed(2));
-
-
 });
 

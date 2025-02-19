@@ -14,14 +14,15 @@
 
   <div class="container">
 
-    <h1 class="text-center text-white py-4">CALCULATE YOUR TICKET PRICE</h1>
+    <h1 class="text-center text-white pt-4">CALCULATE YOUR TICKET PRICE</h1>
 
-    <form id="userForm" class="row pt-4 bg-color bg-white" action="">
+    <form id="userForm" class="row pt-4 bg-color bg-white rounded-top-5 border border-black border-3" action="">
+
       <div class="col-4">
         <div class="mb-3 text-center">
           <label for="userName" class="form-label">Name and Surname</label>
           <input id="userName" type="text" class="form-control text-center" name="userName" id="userName"
-            aria-describedby="helpId" placeholder="Insert your name here" />
+            aria-describedby="helpId" placeholder="Insert your name here" required />
         </div>
       </div>
       <!-- /.col-4 -->
@@ -29,14 +30,14 @@
         <div class="mb-3 text-center">
           <label for="userKm" class="form-label">Km to do</label>
           <input id="distance" type="text" class="form-control text-center" name="userKm" id="userKm"
-            aria-describedby="helpId" placeholder="Insert the number of km to do here" />
+            aria-describedby="helpId" placeholder="Insert the number of km to do here" required />
         </div>
       </div>
       <!-- /.col-4 -->
       <div class="col-4">
         <div class="mb-3 text-center">
           <label for="userAge" class="form-label">Passenger age</label>
-          <select id="age" class="form-select text-center" name="userAge" id="userAge">
+          <select id="age" class="form-select text-center" name="userAge" id="userAge" required>
             <option selected disabled>Select one</option>
             <option value="Under 18">Under 18</option>
             <option value="Over 65">Over 65</option>
@@ -49,7 +50,7 @@
 
       <div class="py-4 d-flex gap-4 justify-content-center">
         <button type="submit" class="btn btn-primary">Generate</button>
-        <button type="submit" class="btn btn-primary">Cancel</button>
+        <button type="reset" class="btn btn-primary">Cancel</button>
       </div>
       <!-- /buttons -->
 
@@ -61,15 +62,15 @@
 
   <div class="container pt-5">
 
-    <h1 class="text-center text-white pt-2">YOUR TICKET HERE</h1>
+    <h1 class="text-center text-white">YOUR TICKET HERE</h1>
 
-    <div class="row p-4 bg-color bg-white">
+    <div class="row p-4 bg-color bg-white rounded-bottom-5 border border-black border-3">
 
       <div class="col-4">
         <h3 class="text-center">PASSENGERS</h3>
         <div class="bg-color bg-primary p-3">
           <h4>PASSENGER NAME</h4>
-          <div class="nameSet">Prova nome</div>
+          <div class="nameSet">Nome Passeggero</div>
         </div>
       </div>
       <!-- /.col-4 -->
@@ -80,7 +81,7 @@
         <div class="row bg-color bg-secondary py-3">
           <div class="col-3 d-flex flex-column justify-content-center gap-1">
             <h5>Offer</h5>
-            <span id="offerSet">Prova offerta</span>
+            <span id="offerSet">Offer</span>
           </div>
           <div class="col-3 d-flex flex-column justify-content-center gap-1">
             <h5>Coach</h5>
